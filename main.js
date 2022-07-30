@@ -21,12 +21,37 @@ let total = 0;
 function calculate(){
     let amt = prices[this.index].value * qntys[this.index].value;
     amnt[this.index].innerText = amt;
-    total = total + amt;
+    
+    amnt.forEach((amt)=>{ 
+        total = total + parseInt(amt.innerText);
+    })
+
     totalOut.innerText = total;
+    total = 0;
+
 }
 btns.forEach((btn,i)=>{
     btn.addEventListener("click" , calculate)
     btn.index = i;
 });
 
+let clearBtn = document.getElementById("clearBtn")
+
+function clear(){
+    prices.forEach((price)=>{
+        price.value = ""
+    })
+
+    qntys.forEach((qnty)=>{
+        qnty.value = ""
+    })
+    
+    amnt.forEach((amt)=>{
+        amt.innerText = ""
+    })
+
+    totalOut.innerText = ""
+}
+
+clearBtn.addEventListener("click", clear)
 //...............................................
