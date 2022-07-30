@@ -8,17 +8,17 @@
 // btns.forEach((btn)=>{
 //     btn.addEventListener("click" , calculate)
 // });
-
 //.................................................................
 
 let btns = document.querySelectorAll(".calculateBtn");
-let prices = document.querySelectorAll(".price")
-let qntys = document.querySelectorAll(".qnty")
-let amnt = document.querySelectorAll(".amt")
-let totalOut = document.getElementById("total")
+let prices = document.querySelectorAll(".price");
+let qntys = document.querySelectorAll(".qnty");
+let amnt = document.querySelectorAll(".amt");
+let totalOut = document.getElementById("total");
 let total = 0;
 
 function calculate(){
+    
     let amt = prices[this.index].value * qntys[this.index].value;
     amnt[this.index].innerText = amt;
     
@@ -28,8 +28,8 @@ function calculate(){
 
     totalOut.innerText = total;
     total = 0;
-
 }
+
 btns.forEach((btn,i)=>{
     btn.addEventListener("click" , calculate)
     btn.index = i;
@@ -47,11 +47,12 @@ function clear(){
     })
     
     amnt.forEach((amt)=>{
-        amt.innerText = ""
+        amt.innerText = "0"
     })
 
-    totalOut.innerText = ""
+    totalOut.innerText = "0"
 }
 
 clearBtn.addEventListener("click", clear)
+
 //...............................................
