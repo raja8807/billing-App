@@ -19,14 +19,14 @@ let totalOut = document.getElementById("total")
 let total = 0;
 
 function calculate(){
-    let amt = prices[this.i].value * qntys[this.i].value;
-    amnt[this.i].innerText = amt;
+    let amt = prices[this.index].value * qntys[this.index].value;
+    amnt[this.index].innerText = amt;
     total = total + amt;
     totalOut.innerText = total;
 }
-btns.forEach((btn,index)=>{
+btns.forEach((btn,i)=>{
     btn.addEventListener("click" , calculate)
-    btn.i = index;
+    btn.index = i;
 });
 
 //...............................................
