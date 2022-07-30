@@ -1,58 +1,63 @@
-// let btns = document.querySelectorAll(".calculateBtn");
-// function calculate(){
-//     let qty = parseInt(this.parentNode.previousElementSibling.firstChild.value);
-//     let price = parseInt(this.parentNode.previousElementSibling.previousElementSibling.firstChild.value);
-//     let amount = qty * price;
-//     this.parentNode.nextElementSibling.firstChild.innerText = amount;
-// }
-// btns.forEach((btn)=>{
-//     btn.addEventListener("click" , calculate)
-// });
-//.................................................................
-
 let btns = document.querySelectorAll(".calculateBtn");
 let prices = document.querySelectorAll(".price");
 let qntys = document.querySelectorAll(".qnty");
 let amnt = document.querySelectorAll(".amt");
 let totalOut = document.getElementById("total");
+let products = document.querySelectorAll(".product")
 let total = 0;
 
-function calculate(){
-    
-    let amt = prices[this.index].value * qntys[this.index].value;
-    amnt[this.index].innerText = amt;
-    
-    amnt.forEach((amt)=>{ 
-        total = total + parseInt(amt.innerText);
-    })
+function calculate() {
 
-    totalOut.innerText = total;
-    total = 0;
+    if (prices[this.index].value >= 0 && qntys[this.index].value >= 0) {
+        let amt = prices[this.index].value * qntys[this.index].value;
+        amnt[this.index].innerText = amt;
+
+        amnt.forEach((amt) => {
+            total = total + parseInt(amt.innerText);
+        })
+
+        totalOut.innerText = total;
+        total = 0;
+    }else{
+        alert("Please Enter Valid Input for "+products[this.index].innerText)
+        prices[this.index].value = 0;
+        qntys[this.index].value = 0;
+    }
 }
 
-btns.forEach((btn,i)=>{
-    btn.addEventListener("click" , calculate)
+btns.forEach((btn, i) => {
+    btn.addEventListener("click", calculate)
     btn.index = i;
 });
 
+// clear Button
+
 let clearBtn = document.getElementById("clearBtn")
 
-function clear(){
-    prices.forEach((price)=>{
-        price.value = ""
+clearBtn.addEventListener("click", () => {
+    prices.forEach((price) => {
+        price.value = "0"
     })
 
-    qntys.forEach((qnty)=>{
-        qnty.value = ""
+    qntys.forEach((qnty) => {
+        qnty.value = "0"
     })
-    
-    amnt.forEach((amt)=>{
+
+    amnt.forEach((amt) => {
         amt.innerText = "0"
     })
 
     totalOut.innerText = "0"
-}
+})
 
-clearBtn.addEventListener("click", clear)
+// calculate Button
+
+let calcAllBtn = document.getElementById("calcAllBtn")
+
+calcAllBtn.addEventListener("click", () => {
+    btns.forEach((btn) => {
+        btn.click()
+    })
+})
 
 //...............................................

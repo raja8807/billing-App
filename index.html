@@ -11,73 +11,79 @@
 
 <body>
     <section class="container">
-        <div class="tableBox">
-            <table id="table">
-                <tr>
-                    <th class="tHead">Product</th>
-                    <th class="tHead" id="priceH">Price</th>
-                    <th class="tHead">Qty</th>
-                    <th class="tHead">Action</th>
-                    <th class="tHead">Amount</th>
-                </tr>
-
-                <tr class="data">
-                    <td>pen</td>
-                    <td><input type="number" class="price"></td>
-                    <td><input type="number" class="qnty"></td>
-                    <td><button class="calculateBtn" id="btn">Calculate</button></td>
-                    <td><p class="amt">0</p></td>
-                </tr>
-
-                <tr class="data">
-                    <td>Water Can</td>
-                    <td><input type="number" class="price"></td>
-                    <td><input type="number" class="qnty"></td>
-                    <td><button class="calculateBtn">Calculate</button></td>
-                    <td><p class="amt">0</p></td>
-                </tr class="data">
-
-                <tr class="data">
-                    <td>Laptop</td>
-                    <td><input type="number" class="price"></td>
-                    <td><input type="number" class="qnty"></td>
-                    <td><button class="calculateBtn">Calculate</button></td>
-                    <td><p class="amt">0</p></td>
-                </tr>
-                <tr class="data">
-                    <td>Bag</td>
-                    <td><input type="number" class="price"></td>
-                    <td><input type="number" class="qnty"></td>
-                    <td><button class="calculateBtn">Calculate</button></td>
-                    <td><p class="amt">0</p></td>
-                </tr>
-                <tr class="data">
-                    <td>Keyboard</td>
-                    <td><input type="number" class="price"></td>
-                    <td><input type="number" class="qnty"></td>
-                    <td><button class="calculateBtn">Calculate</button></td>
-                    <td><p class="amt">0</p></td>
-                </tr>
-
-                <tr class="data">
-                    <td>Keyboard</td>
-                    <td><input type="number" class="price"></td>
-                    <td><input type="number" class="qnty"></td>
-                    <td><button class="calculateBtn">Calculate</button></td>
-                    <td><p class="amt">0</p></td>
-                </tr>
-
-                
-                <tr class="data">
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><p>Total</p></td>
-                    <td><p id="total">0</p></td>
-                </tr>
-            </table>
+        <div class="box">
+            <div class="tableBox">
+                <table id="table">
+                    <tr>
+                        <th class="tHead">Product</th>
+                        <th class="tHead" id="priceH">Price</th>
+                        <th class="tHead">Qty</th>
+                        <th class="tHead">Action</th>
+                        <th class="tHead">Amount</th>
+                    </tr>
+    
+                    <tr class="data">
+                        <td><p class="product">Pen</p></td>
+                        <td><input type="number" class="price" value="0"></td>
+                        <td><input type="number" class="qnty" value="0"></td>
+                        <td><button class="calculateBtn btn" id="btn">Calculate</button></td>
+                        <td><p class="amt">0</p></td>
+                    </tr>
+    
+                    <tr class="data">
+                        <td><p class="product">Laptop</p></td>
+                        <td><input type="number" class="price" value="0"></td>
+                        <td><input type="number" class="qnty" value="0"></td>
+                        <td><button class="calculateBtn btn">Calculate</button></td>
+                        <td><p class="amt">0</p></td>
+                    </tr class="data">
+    
+                    <tr class="data">
+                        <td><p class="product">Mouse</p></td>
+                        <td><input type="number" class="price" value="0"></td>
+                        <td><input type="number" class="qnty" value="0"></td>
+                        <td><button class="calculateBtn btn">Calculate</button></td>
+                        <td><p class="amt">0</p></td>
+                    </tr>
+                    
+                    <tr class="data">
+                        <td><p class="product">Bag</p></td>
+                        <td><input type="number" class="price" value="0"></td>
+                        <td><input type="number" class="qnty" value="0"></td>
+                        <td><button class="calculateBtn btn">Calculate</button></td>
+                        <td><p class="amt">0</p></td>
+                    </tr>
+    
+                    <tr class="data">
+                        <td><p class="product">Keyboard</p></td>
+                        <td><input type="number" class="price" value="0"></td>
+                        <td><input type="number" class="qnty" value="0"></td>
+                        <td><button class="calculateBtn btn">Calculate</button></td>
+                        <td><p class="amt">0</p></td>
+                    </tr>
+    
+                    <tr class="data">
+                        <td><p class="product">Pendrive</p></td>
+                        <td><input type="number" class="price" value="0"></td>
+                        <td><input type="number" class="qnty" value="0"></td>
+                        <td><button class="calculateBtn btn">Calculate</button></td>
+                        <td><p class="amt">0</p></td>
+                    </tr>
+    
+                    <tr class="data">
+                        <td class="empty"></td>
+                        <td class="empty"></td>
+                        <td class="empty"></td>
+                        <td><p>Total</p></td>
+                        <td><p id="total">0</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="control-box">
+                <button id="clearBtn" class="btn">Clear</button>
+            <button id="calcAllBtn" class="btn">Calculate</button>
+            </div>
         </div>
-        <button id="clearBtn">Clear</button>
     </section>
 
     <script src="./main.js"></script>
