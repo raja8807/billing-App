@@ -51,7 +51,7 @@ p{
     padding: 30px;
     border-radius: 20px;
     background-color: rgb(186, 185, 242);
-    box-shadow: 2px 0px 5px 10px rgba(127, 127, 127, 0.2);
+    box-shadow: 2px 0px 50px 10px rgba(127, 127, 127, 0.2);
 }
 
 input{
