@@ -3,7 +3,7 @@
 }
 
 .container{
-    font-size: 30px;
+    font-size: 20px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -64,6 +64,20 @@ input{
     height: 30px;
 }
 
-.empty{
-    border: none;
+.total-box{
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+}
+
+#total{
+    margin-left: 10px;
+}
+
+#newProduct{
+    width: 300px;
+}
+
+.delBtn{
+    background-color: rgba(255, 0, 0, 0.7);
 }

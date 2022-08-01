@@ -20,68 +20,111 @@
                         <th class="tHead">Qty</th>
                         <th class="tHead">Action</th>
                         <th class="tHead">Amount</th>
+                        <th class="tHead">Delete</th>
                     </tr>
-    
-                    <tr class="data">
-                        <td><p class="product">Pen</p></td>
+
+                    <tr class="data" id="ProductData">
+                        <td>
+                            <p class="product">Pen</p>
+                        </td>
                         <td><input type="number" class="price" value="0"></td>
                         <td><input type="number" class="qnty" value="0"></td>
                         <td><button class="calculateBtn btn" id="btn">Calculate</button></td>
-                        <td><p class="amt">0</p></td>
+                        <td>
+                            <p class="amt">0</p>
+                        </td>
+                        <td><button class="delBtn btn">Delete</button></td>
+
                     </tr>
-    
+
                     <tr class="data">
-                        <td><p class="product">Laptop</p></td>
+                        <td>
+                            <p class="product">Laptop</p>
+                        </td>
                         <td><input type="number" class="price" value="0"></td>
                         <td><input type="number" class="qnty" value="0"></td>
                         <td><button class="calculateBtn btn">Calculate</button></td>
-                        <td><p class="amt">0</p></td>
+                        <td>
+                            <p class="amt">0</p>
+                        </td>
+                        <td><button class="delBtn btn">Delete</button></td>
+
                     </tr class="data">
-    
+
                     <tr class="data">
-                        <td><p class="product">Mouse</p></td>
+                        <td>
+                            <p class="product">Mouse</p>
+                        </td>
                         <td><input type="number" class="price" value="0"></td>
                         <td><input type="number" class="qnty" value="0"></td>
                         <td><button class="calculateBtn btn">Calculate</button></td>
-                        <td><p class="amt">0</p></td>
+                        <td>
+                            <p class="amt">0</p>
+                        </td>
+                        <td><button class="delBtn btn">Delete</button></td>
+
                     </tr>
-                    
+
                     <tr class="data">
-                        <td><p class="product">Bag</p></td>
+                        <td>
+                            <p class="product">Bag</p>
+                        </td>
                         <td><input type="number" class="price" value="0"></td>
                         <td><input type="number" class="qnty" value="0"></td>
                         <td><button class="calculateBtn btn">Calculate</button></td>
-                        <td><p class="amt">0</p></td>
+                        <td>
+                            <p class="amt">0</p>
+                        </td>
+                        <td><button class="delBtn btn">Delete</button></td>
+
                     </tr>
-    
+
                     <tr class="data">
-                        <td><p class="product">Keyboard</p></td>
+                        <td>
+                            <p class="product">Keyboard</p>
+                        </td>
                         <td><input type="number" class="price" value="0"></td>
                         <td><input type="number" class="qnty" value="0"></td>
                         <td><button class="calculateBtn btn">Calculate</button></td>
-                        <td><p class="amt">0</p></td>
+                        <td>
+                            <p class="amt">0</p>
+                        </td>
+                        <td><button class="delBtn btn">Delete</button></td>
+
                     </tr>
-    
+
                     <tr class="data">
-                        <td><p class="product">Pendrive</p></td>
+                        <td>
+                            <p class="product">Pendrive</p>
+                        </td>
                         <td><input type="number" class="price" value="0"></td>
                         <td><input type="number" class="qnty" value="0"></td>
                         <td><button class="calculateBtn btn">Calculate</button></td>
-                        <td><p class="amt">0</p></td>
+                        <td>
+                            <p class="amt">0</p>
+                        </td>
+                        <td><button class="delBtn btn">Delete</button></td>
+
                     </tr>
-    
-                    <tr class="data">
-                        <td class="empty"></td>
-                        <td class="empty"></td>
-                        <td class="empty"></td>
-                        <td><p>Total</p></td>
-                        <td><p id="total">0</p></td>
-                    </tr>
+
+
                 </table>
+            </div>
+            <div class="total-box">
+                <p id="totalTxt">Total = </p>
+                <p id="total">0</p>
             </div>
             <div class="control-box">
                 <button id="clearBtn" class="btn">Clear</button>
-            <button id="calcAllBtn" class="btn">Calculate</button>
+                <button id="calcAllBtn" class="btn">Calculate</button>
+
+                <br>
+                <br>
+
+                <label for="newProduct">New Product</label>
+                <input type="text" placeholder="New Product Name" id="newProduct">
+                <button id="createBtn" class="btn">Create</button>
+
             </div>
         </div>
     </section>
