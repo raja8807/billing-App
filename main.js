@@ -117,14 +117,12 @@ function addProduct() {
 
 createBtn.addEventListener("click", addProduct)
 
-
-//...............................................
-
 // delete Button
 
 function deleteProduct() {
 
     let product = this.parentNode.parentNode;
+    
     product.remove()
 
     btns = document.querySelectorAll(".calculateBtn");
@@ -140,4 +138,4 @@ function deleteProduct() {
     calcAllBtn.click();
 }
 
-
+//...............................................
