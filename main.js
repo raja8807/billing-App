@@ -6,7 +6,7 @@ let totalOut = document.getElementById("total");
 let products = document.querySelectorAll(".product");
 let delBtns = document.querySelectorAll(".delBtn")
 
-function calculate() {
+function calculate(){
     let total = 0;
     // console.log(this);
     if (prices[this.index].value >= 0 && qntys[this.index].value >= 0) {
