@@ -7,13 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    
 </head>
 
 <body>
+
     <section class="container">
         <div class="box">
             <div class="tableBox">
                 <table id="table">
+                    <h1 id="heading">Bill</h1>
                     <tr>
                         <th class="tHead">Product</th>
                         <th class="tHead" id="priceH">Price</th>
@@ -34,7 +37,6 @@
                             <p class="amt">0</p>
                         </td>
                         <td><button class="delBtn btn">Delete</button></td>
-
                     </tr>
 
                     <tr class="data">
@@ -48,8 +50,7 @@
                             <p class="amt">0</p>
                         </td>
                         <td><button class="delBtn btn">Delete</button></td>
-
-                    </tr class="data">
+                    </tr>
 
                     <tr class="data">
                         <td>
@@ -62,7 +63,6 @@
                             <p class="amt">0</p>
                         </td>
                         <td><button class="delBtn btn">Delete</button></td>
-
                     </tr>
 
                     <tr class="data">
@@ -76,7 +76,6 @@
                             <p class="amt">0</p>
                         </td>
                         <td><button class="delBtn btn">Delete</button></td>
-
                     </tr>
 
                     <tr class="data">
@@ -90,7 +89,6 @@
                             <p class="amt">0</p>
                         </td>
                         <td><button class="delBtn btn">Delete</button></td>
-
                     </tr>
 
                     <tr class="data">
@@ -104,16 +102,15 @@
                             <p class="amt">0</p>
                         </td>
                         <td><button class="delBtn btn">Delete</button></td>
-
                     </tr>
-
-
                 </table>
             </div>
+
             <div class="total-box">
                 <p id="totalTxt">Total = </p>
                 <p id="total">0</p>
             </div>
+
             <div class="control-box">
                 <button id="clearBtn" class="btn">Clear</button>
                 <button id="calcAllBtn" class="btn">Calculate All</button>
@@ -122,10 +119,10 @@
                 <br>
 
                 <label for="newProduct">New Product</label>
-                <input type="text" placeholder="New Product Name" id="newProduct">
+                <input type="text" placeholder="New Product Name" id="newProduct" maxlength="30">
                 <button id="createBtn" class="btn">Create</button>
-
             </div>
+            
         </div>
     </section>
 

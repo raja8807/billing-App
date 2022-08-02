@@ -70,7 +70,6 @@ clearBtn.addEventListener("click", () => {
 let calcAllBtn = document.getElementById("calcAllBtn");
 
 calcAllBtn.addEventListener("click", () => {
-
     btns.forEach((btn) => {
         btn.click();
     })
@@ -122,7 +121,7 @@ createBtn.addEventListener("click", addProduct)
 function deleteProduct() {
 
     let product = this.parentNode.parentNode;
-    
+
     product.remove()
 
     btns = document.querySelectorAll(".calculateBtn");
